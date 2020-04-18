@@ -65,6 +65,8 @@ typedef NS_ENUM(NSInteger, TXScrollLabelViewType) {
 @property (assign, nonatomic) CGFloat scrollSpace;
 /** 文字排版 */
 @property (assign, nonatomic) NSTextAlignment textAlignment;
+/** 文字行数 */
+@property (assign, nonatomic) NSTextAlignment numberOfLines;
 /** 字体大小 */
 @property (strong, nonatomic) UIFont *font;
 //根据内容自适应宽度 Pending!!

@@ -341,6 +341,12 @@ typedef NS_ENUM(NSInteger, TXScrollLabelType) {
     [self setupSubviewsLayout];
 }
 
+- (void)setNumberOfLines:(NSInteger)num {
+    _numberOfLines = num;
+    self.upLabel.numberOfLines = num;
+    self.downLabel.numberOfLines = num;
+}
+
 - (void)setTextAlignment:(NSTextAlignment)textAlignment {
     _textAlignment = textAlignment;
     self.upLabel.textAlignment = textAlignment;
